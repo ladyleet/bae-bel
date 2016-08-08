@@ -1,0 +1,30 @@
+.background-img {
+  background-image: url(/img/bear.png);
+}
+
+$seb_size: 400px;
+
+.seb-styling {
+  height: $seb_size;
+  width: $seb_size;
+  border-radius: $seb_size/2;
+  margin: 20px;
+}
+
+
+$logo_size: 150px;
+
+.logo-styling {
+  height: $logo_size;
+  width: $logo_size;
+  border-radius: $logo_size/2;
+  margin: 10px;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
+.margin-left-30 {
+  margin-left: 30px;
+}

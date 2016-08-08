@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <div class="row">
+
+      {{#each model as |seb|}}
+      <div class="col s4">
+        <marquee behaviour="scroll" behavior="alternate" direction="right" scrollamount="30">
+        <img class="seb-styling" src="/img/seb-{{seb.number}}.png" alt="seb">
+      </marquee>
+      </div>
+      {{/each}}
+
+  </div>
+</div>

@@ -8,15 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{content-for 'head'}}
-
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/bae-bel.css">
 
     {{content-for 'head-footer'}}
   </head>
-  <body>
+  <body class="background-img">
     {{content-for 'body'}}
 
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCmXMFUj4TRuQPn7ckrQUYAkgQScFZmgWE",
+        authDomain: "bae-bel.firebaseapp.com",
+        databaseURL: "https://bae-bel.firebaseio.com",
+        storageBucket: "",
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
     <script src="assets/vendor.js"></script>
     <script src="assets/bae-bel.js"></script>
 
